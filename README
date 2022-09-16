@@ -1,0 +1,25 @@
+Overview
+--------
+
+A DKMS module that builds and installs legacy DRM drivers.
+
+Requirements
+------------
+
+* dkms
+* Current kernel source
+* Configured header path for kernel kernel
+
+Installation
+------------
+
+* Copy files to /usr/src/drm_legacy-0.1/
+* dkms add drm_legacy/0.1
+* dkms autoinstall drm_legacy/0.1
+
+A Word of Warning
+-----------------
+
+CONFIG_DRM_LEGACY was created because the interfaces pose many
+security problems. The drivers covered by this config option are
+likely to be poorly maintained.

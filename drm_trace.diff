@@ -1,0 +1,9 @@
+--- a/drm_trace.h	2022-08-31 08:18:21.000000000 -0700
++++ b/drm_trace.h	2022-09-16 03:07:11.203245693 -0700
+@@ -70,5 +70,5 @@
+ 
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm
++#define TRACE_INCLUDE_PATH DRM_TRACE_INCLUDE_PATH
+ #include <trace/define_trace.h>
